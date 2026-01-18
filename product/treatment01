@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>TOTALLY</title>
+<meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+</head>
+
+<body>
+<header id="header">
+  <h1 class="site-title"> <a href="index.html"><img src="img/logo01.png" alt="K&R"></a> </h1>
+  <nav>
+    <ul>
+      <li><a href="#concept">Concept</a></li>
+      <li><a href="#product-title">Product</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div id="item" class="wrapper">
+    <div class="item-image"> <img src="img/sp01-01.jpg" alt=""> </div>
+    <div class="item-info">
+      <h1 class="item-title">TREATMENT</h1>
+      <p> テキストテキストテキストテキストテキストテキストテキスト
+        テキストテキストテキストテキストテキストテキストテキスト
+        テキストテキストテキストテキストテキストテキストテキスト
+        テキストテキストテキストテキストテキストテキストテキスト
+        テキストテキストテキストテキストテキストテキストテキスト
+        テキストテキストテキスト </p>
+      <p>￥3,000 (税込)</p>
+      <a class="cart-btn" href="#">ADD TO CART</a> </div>
+  </div>
+</main>
+<footer id="footer" class="wrapper">
+  <p class="copyright">&copy;K&amp;R</p>
+</footer>
+</body>
+</html>
