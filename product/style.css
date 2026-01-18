@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #2d2d2d;
+  font-family: 'Crimson Text', serif;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+ul {
+  list-style: none;
+	 margin: 0;
+	  padding:0;
+	width: 100%;
+}
+a {
+  color: #2d2d2d;
+  text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1{margin: 0;
+padding: 0;}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*-------------------------------------------
+Header
+-------------------------------------------*/
+#header {
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 32px 15px;
+  margin: 0 auto ;
+	background-color: #202020;
+	position: sticky;
+	top:0;
+	z-index: 10;
+
+}
+#header ul {
+  display: flex;
+	
+}
+#header li {
+  font-size: 1rem;
+  margin-right: 30px;
+	
+}
+
+
+#header li a{color:#ffffff;height: auto;margin: 0;padding: 0;}
+
+#header h1 img{display: flex;width:70%;height:70%;}
+/*
+最後のliタグには margin-right を設定しない
+*/
+#header li:last-child {
+  margin-right: 0;
+}
+
+#header .site-title h1{margin: 0;padding: 0;
+width:auto;height: auto;}
+/*-------------------------------------------
+商品ページ
+-------------------------------------------*/
+#item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+/*
+flex-shrink: 0;
+画像が縮小されるのを防ぐ
+*/
+#item .item-image {
+  max-width: 400px;
+  flex-shrink: 0;
+  margin-right: 60px;
+	margin-top: 60px;
+}
+#item .item-info p {
+  margin-bottom: 30px;
+  line-height: 1.9;
+}
+/*
+「display: flex;」と「align-items: center;」で、
+高さを中央にそろえる
+*/
+#item .item-info .item-title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-top: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#item .item-info .cart-btn {
+  width: 100%;
+  background-color: #4B4B4B;
+  color: #fff;
+  display: block;
+  line-height: 1;
+  padding: 18px 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/*
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  padding: 10px 0;
+}
+#footer .copyright {
+  font-size: 0.625rem;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 896px) {
+
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+   #header {
+    width: 100%;
+    padding: 20px 18px;
+  }
+ #header h1 img{display: flex;width:70%;height:70%;} 
+
+  /*-------------------------------------------
+  商品ページ
+  -------------------------------------------*/
+  #item {
+    flex-direction: column;
+  }
+  #item .item-image {
+    max-width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #item .item-info {
+    padding: 0 16px;
+  }
+}
