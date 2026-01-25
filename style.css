@@ -127,6 +127,11 @@ Concept、product
 
 .product-title {margin-bottom:30px;text-align: center;font-size: 1.5rem;}
 .product-title span{text-size:0.5rem;}
+
+.section-title-en.price {
+  font-size: 1.5rem; /* 好きなサイズに変更 */
+}
+
 /*-------------------------------------------
 Footer
 -------------------------------------------*/
