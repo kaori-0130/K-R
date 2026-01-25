@@ -42,12 +42,10 @@ a {
   margin-bottom: 4px;
 }
 
-.section-title-en img{width:200px;hight:50px;}
 
 .section-title-en {
   display: inline-block;
   margin-bottom: 25px;
-	font-size: 1.2rem;
 }
 
 /*-------------------------------------------
@@ -90,12 +88,22 @@ Header
 
 #header li a{color:#ffffff;}
 
-#header h1 img{width: 50%;height: 50%;}
+#header h1 img{
+	    width: 100%; 
+    max-width: 70px; 
+    height: auto;
+    display: block;
+}
 /*
 最後のliタグには margin-right を設定しない
 */
 #header li:last-child {
   margin-right: 0;
+}
+
+#concept,
+#product-title{
+  scroll-margin-top: 100px;
 }
 
 /*-------------------------------------------
@@ -113,6 +121,9 @@ Concept、product
   width: 50%;
   padding: 0 7%;
 }
+
+.section-title{margin-bottom: 30px;}
+.section-title-en{font-size: 0.9rem;}
 
 .product-title {margin-bottom:30px;text-align: center;font-size: 1.5rem;}
 .product-title span{text-size:0.5rem;}
@@ -142,9 +153,7 @@ Footer
 SP
 -------------------------------------------*/
 @media screen and (max-width: 767px) {
-  .section-title {
-    font-size: 1.25rem;
-  }
+
   /*-------------------------------------------
   Mainvisual
   -------------------------------------------*/
@@ -152,12 +161,10 @@ SP
     width: 100%;
     margin: 0;
   }
-  /*
-  heightをvhで指定することで、画面の高さを基準にした高さになる
-  */
+
   #mainvisual img {
-    width: 100%;
-    height: 50vh;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
   }
 
@@ -192,16 +199,24 @@ SP
     padding: 0;
   }
 	.text{text-align: center;}
-	
-	
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+.section-title-en {
+  display: inline-block;
+  margin-bottom: 25px;
+
+}	
+	.section-title-en h3{font-size:1.2rem;}
+	.section-title-en p{font-size:0.95rem;}
+/*-------------------------------------------
+Footer
+-------------------------------------------*/	
 	.footer-menu{font-size: 0.6rem;}
 	.section-title {
   font-size: 2rem;
   font-weight:hard;
 }
-.section-title-en {
-  display: inline-block;
-  margin-bottom: 25px;
-	font-size: 1.2rem;
-}	
+
 }
